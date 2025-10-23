@@ -1,0 +1,24 @@
+README
+put an api.py file in the root directory of crewai project.
+Structure of your folder - 
+D:\root_directory
+│
+├── pyproject.toml
+├── api.py
+└── src\
+    └── query\
+        ├── __init__.py
+        ├── crew.py
+        └── other_files.py
+I have included the api.py file in this github repository.
+Then, cd to the root directory and run this line on the terminal-
+"uvicorn api:app --reload"
+
+This ensures Python resolves imports starting from your project root.
+You will get an https local link as http://127.0.0.1:8000/
+
+To get a Swagger UI:
+click on this -http://127.0.0.1:8000/docs
+this allows you to put inputs in your file.
+
+I have also attatched an visual representation of how your interface should be in pictures.pdf
